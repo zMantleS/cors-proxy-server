@@ -3,8 +3,8 @@ var http = require('http');
 var request = require('request');
 
 var urlRegex = /^https?/;
-var sizeLimit = process.env.SIZE_LIMIT || 512 * 1024;
-var requestsLimit = process.env.REQ_LIMIT || 15;
+var sizeLimit = process.env.SIZE_LIMIT || 512 * 1024 * 10;
+var requestsLimit = process.env.REQ_LIMIT || 30;
 var copyHeaders = ['user-agent', 'content-type'];
 var reqIPs = [];
 
